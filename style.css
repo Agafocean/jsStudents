@@ -1,0 +1,36 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.tbody {
+  counter-reset: nstr;
+}
+
+.tbody tr:before {
+  counter-increment: nstr;
+  content: counter(nstr);
+  font-weight: 700;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.newstudent {
+  display: none;
+}
+
+button:hover:not([disabled]) {
+  background-color: darkgray;
+}
+
+button:active:not([disabled]) {
+  background-color: gray;
+}
+
+.tbody .deletebutton:hover {
+  background-color: red;
+}
+
+.btncansel {
+  margin-right: 30%;
+}
